@@ -1,4 +1,6 @@
 FROM nginx:1.13.5-alpine
+MAINTAINER Igor Ilic
+
 # Node install
 ENV NPM_CONFIG_LOGLEVEL info
 ENV NODE_VERSION 6.11.4
