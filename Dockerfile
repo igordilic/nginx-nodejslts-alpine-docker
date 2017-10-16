@@ -2,6 +2,7 @@ FROM nginx:1.13.5-alpine
 MAINTAINER Igor Ilic
 
 # Node install
+  # gpg keys listed at https://github.com/nodejs/node#release-team
 ENV NPM_CONFIG_LOGLEVEL info
 ENV NODE_VERSION 6.11.4
 
@@ -19,7 +20,6 @@ RUN addgroup -g 1000 node \
         linux-headers \
         make \
         python \
-  # gpg keys listed at https://github.com/nodejs/node#release-team
   && for key in \
     9554F04D7259F04124DE6B476D5A82AC7E37093B \
     94AE36675C464D64BAFA68DD7434390BDBE9B9C5 \
