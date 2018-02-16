@@ -62,16 +62,4 @@ RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar \
   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz \
   && apk del .build-deps-yarn
 
-# JRE install with webdriver
-RUN apk --update add --no-cache \
-      python \
-      build-base \
-      git \
-      openjdk8-jre \
-      udev \
-      ttf-freefont \
-      chromium-chromedriver \
-      chromium
-
-ENV CHROME_BIN /usr/bin/chromium-browser
 
