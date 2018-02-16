@@ -1,6 +1,6 @@
 # Nginx and Node on Alpine
 
-Docker image for Alpine linux with nginx and NodeJs 8.9.3
+Docker image for Alpine linux with nginx and NodeJs Carbon
 This image contain latest npm and yarn 1.3.2
 
 Tags will apply to different nodejs version:
